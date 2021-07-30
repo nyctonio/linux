@@ -1,6 +1,7 @@
 # LINUX
 
-[🔥 Learn About Commands 🔥](https://explainshell.com/explain)
+<a href="https://explainshell.com/explain" target="blank">🔥 Learn About Commands 🔥</a>
+
 
 ## Cheatsheet
 | **Command** | **Description** |
