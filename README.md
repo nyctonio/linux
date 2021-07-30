@@ -1,6 +1,7 @@
 # LINUX
 
 <a href="https://explainshell.com/explain" target="_blank">🔥 Learn About Commands 🔥</a>
+<a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a>
 
 
 ## Cheatsheet
