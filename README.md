@@ -1,5 +1,6 @@
 # LINUX
 
+[🔥 Learn About Commands 🔥](https://explainshell.com/explain)
 
 ## Cheatsheet
 | **Command** | **Description** |
