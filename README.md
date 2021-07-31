@@ -3,7 +3,7 @@
 <a href="https://explainshell.com/explain" target="_blank">🔥 Learn About Commands 🔥</a>
 
 
-## Cheatsheet
+## Cheatsheet of Linux
 | **Command** | **Description** |
 | --------------|-------------------|
 | `man <tool>` | Opens man pages for the specified tool. | 
