@@ -90,7 +90,7 @@ echo hello bash me is Ritesh 😎.
 TEMP="some data"
 echo "this is some : $TEMP"
 
-get values from the user
+# get values from the user
 
 read -p "enter something : " INP
 echo "you entered $INP"
@@ -107,24 +107,24 @@ else
     echo "get lost"
 fi
 
--eq equal
--ne not equal
--gt greater than
--ge greater than or equal to
--lt less than
--le less than or equal to
+# -eq equal
+# -ne not equal
+# -gt greater than
+# -ge greater than or equal to
+# -lt less than
+# -le less than or equal to
 
 
-lets make programme number 1 🎃
+# lets make programme number 1 🎃
 
-addition of two numbers
+# addition of two numbers
 
 read -p "enter number 1: " NUM1
 read -p "enter number 2: " NUM2
 ((SUM=$NUM1+$NUM2))
 echo "the sum of the numbers is $SUM"
 
-lets make programme number 2 👓
+# lets make programme number 2 👓
 
 # highest of three numbers
 
@@ -143,7 +143,7 @@ else
     echo "the greatest is $NUM3"
 fi
 
-lets make programme number 3 🥼
+# lets make programme number 3 🥼
 
 # swap two numbers
 
@@ -170,7 +170,7 @@ do
     ((N--))
 done
 
-lets make programme number 4 🎓
+# lets make programme number 4 🎓
 
 # prime number
 
@@ -187,7 +187,7 @@ do
 done
 echo $P
 
-programme number 5 🧐
+# programme number 5 🧐
 # even odd
 
 # Do it by yourself 😉
@@ -199,7 +199,7 @@ else
 fi
 
 
-programme number 6 🎂
+# programme number 6 🎂
 # sum of digits 
 
 read -p "enter a number: " N
