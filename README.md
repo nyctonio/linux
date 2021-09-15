@@ -78,3 +78,174 @@
 | `wc` | Prints newline, word, and byte counts for a given input. |
 | `chmod` | Changes permission of a file or directory. |
 | `chown` | Changes the owner and group of a file or directory. |
+
+
+## Bash Shell Scripting
+
+```bash
+#! /usr/bin/bash
+
+echo hello bash me is Ritesh 😎.
+
+TEMP="some data"
+echo "this is some : $TEMP"
+
+get values from the user
+
+read -p "enter something : " INP
+echo "you entered $INP"
+
+# #if else statements
+
+if [ $INP -eq 100 ]
+then
+    echo "you are awesome"
+elif [ "$INP" == "Rish" ]
+then
+    echo "you are awesome too"
+else
+    echo "get lost"
+fi
+
+-eq equal
+-ne not equal
+-gt greater than
+-ge greater than or equal to
+-lt less than
+-le less than or equal to
+
+
+lets make programme number 1 🎃
+
+addition of two numbers
+
+read -p "enter number 1: " NUM1
+read -p "enter number 2: " NUM2
+((SUM=$NUM1+$NUM2))
+echo "the sum of the numbers is $SUM"
+
+lets make programme number 2 👓
+
+# highest of three numbers
+
+read -p "enter number 1: " NUM1
+read -p "enter number 2: " NUM2
+read -p "enter number 3: " NUM3
+if((NUM1>NUM2));then
+    if((NUM1>NUM3));then
+        echo "the greatest is $NUM1"
+    else
+        echo "the greatest is $NUM3"
+    fi
+elif((NUM2>NUM3));then
+    echo "the gratest is $NUM2"
+else
+    echo "the greatest is $NUM3"
+fi
+
+lets make programme number 3 🥼
+
+# swap two numbers
+
+read -p "enter number 1: " NUM1
+read -p "enter number 2: " NUM2
+((NUM1=$NUM1+$NUM2))
+((NUM2=$NUM1-$NUM2))
+((NUM1=$NUM1-$NUM2))
+echo "after swap $NUM1 and $NUM2"
+
+For Loops
+NAME="hello bash me is Ritesh 😎"
+for var in $NAME
+do
+    echo $var
+done
+
+while 
+
+N=10
+while((N!=0))
+do 
+    echo $N
+    ((N--))
+done
+
+lets make programme number 4 🎓
+
+# prime number
+
+read -p "enter a number to check: " N
+I=2
+P="prime"
+while((I<N))
+do
+    if((N%I==0))
+    then
+        P="not prime"
+        break
+    fi
+done
+echo $P
+
+programme number 5 🧐
+# even odd
+
+# Do it by yourself 😉
+read var
+if(($var%2==0));then
+    echo "even"
+else
+    echo "odd"
+fi
+
+
+programme number 6 🎂
+# sum of digits 
+
+read -p "enter a number: " N
+S=0
+while((N!=0))
+do
+    ((T=$N%10))
+    ((N=$N/10))
+    ((S=$S+$T))
+done
+echo $S
+```
+
+```bash
+#! /usr/bin/bash
+for var in "$@"
+do
+    echo $var
+done
+
+
+echo $#
+
+((n=$1+$2))
+echo $$
+echo $n
+
+n=1
+while((n!=6))
+do
+    mkdir dir-$n
+    cd dir-$n
+    touch file-$n
+    cd ..
+    ((n++))
+done
+```
+
+```bash
+#! /usr/bin/bash
+x=3;y=5;z=10;
+if [ ($x -eq 3 ) -a ( $y -eq 5 -o $z -eq 10 ) ]
+then
+    echo $x
+else
+    echo $y
+fi
+```
+
